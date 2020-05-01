@@ -2,6 +2,10 @@
 	font-family: "Courier New";
 }
 
+.navbar{
+	background-color: #333;
+}
+
 #header{
 	padding-top:2rem;
 }
@@ -9,3 +13,4 @@
 #about-me-header{
 	padding-top: 2rem;
 }
+
