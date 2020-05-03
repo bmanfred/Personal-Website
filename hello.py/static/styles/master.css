@@ -14,3 +14,11 @@
 	padding-top: 2rem;
 }
 
+.fa{
+	border-radius: 2px;
+}
+
+.fa:hover{
+	opacity: 0.7;
+}
+

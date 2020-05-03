@@ -2,39 +2,26 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/master.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <html>
-	<body>
-		<div class="navbar">
-			<a href="{{url_for('about_me')}}">About Me</a>
-			<a href="http://github.com/bmanfred">GitHub</a>
-			<a href="http://bui-ferpa-police.systems">WebServer I Wrote in C</a>
-			<a href="http://linkedin.com/in/brendan-manfred/">LinkedIn</a>
-			<a href="{{url_for('resume')}}">My Resume</a>
-		
-		</div>
-
-
-
-
+	<body>	
 		<div class="container">
 			<div id="header">
-				<h1><center>Welcome To Brendan Manfred's Page</center></h1>
-			</div>
-
-			<div class="row">
-				<div id="links-col-1" class="col">
-					<h3 style="padding-top: 3rem"><center><a href="{{url_for('about_me')}}">About Me</a></center></h3>
-					<h3 style="padding-top: 3rem"><center><a href="http://github.com/bmanfred">GitHub</a></center></h3>
-					<h3 style="padding-top: 3rem"><center><a href="http://bui-ferpa-police.systems">WebServer I Wrote in C</a></center></h3>
-				</div>
-
-				<div id="links-col-2" class="col">
-					<h3 style="padding-top: 3rem"><center><a href="http://linkedin.com/in/brendan-manfred/">LinkedIn</a></center></h3>
-					<h3 style="padding-top: 3rem"><center><a href="{{url_for('resume')}}">My Resume</a></center></h3>
+				<h1><center>Brendan Manfred</center></h1>
+				<h2><center>University of Notre Dame '22</center></h2>
+				<h2><center>Computer Science</center></h2>
+				<div class="row">
+					<div class="col">
+						<a href="http://github.com/bmanfred" class="fa fa-github"></a>
+						<a href="http://linkedin.com/in/brendan-manfred" class="fa fa-linkedin"></a>
+						<a method="post" href="mailto:bmanfred@nd.edu" class="fa fa-envelope"></a>
+						<a href="{{url_for('about_me')}}" class="fa fa-id-card"></a>
 					
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</body>
 </html>
