@@ -14,9 +14,10 @@
 	padding-top: 2rem;
 }
 
-.fa{
-	border-radius: 2px;
+.circle-icon{
+
 }
+
 
 .fa:hover{
 	opacity: 0.7;
