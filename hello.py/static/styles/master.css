@@ -14,10 +14,19 @@
 	padding-top: 2rem;
 }
 
-.circle-icon{
-
+.fa{
+	color: red;
 }
-
+.circle-icon{
+	background: #118e72;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: middle;
+	padding: 10px;
+}
 
 .fa:hover{
 	opacity: 0.7;
