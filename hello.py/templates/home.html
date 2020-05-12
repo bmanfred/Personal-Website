@@ -5,21 +5,41 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <html>
-	<body>	
+	<body>
+		<div class="bg-image">
+		</div>
 		<div class="container">
 			<div id="header">
 				<h1><center>Brendan Manfred</center></h1>
 				<h2><center>University of Notre Dame '22</center></h2>
 				<h2><center>Computer Science</center></h2>
-				<div class="row">
-					<div class="col">
-						<a href="http://github.com/bmanfred" class="fa fa-github fa-3x circle-icon"></a>
-						<a href="http://linkedin.com/in/brendan-manfred" class="fa fa-linkedin fa-3x circle-icon"></a>
-						<a method="post" href="mailto:bmanfred@nd.edu" class="fa fa-envelope fa-3x circle-icon"></a>
-						<a href="{{url_for('about_me')}}" class="fa fa-id-card fa-3x circle-icon"></a>
-					
-					</div>
+			</div>
+			<div class="row" id="links">
+				<div class="col">
 				</div>
+				<div class="col">
+					<a href="{{url_for('about_me')}}">About Me</a>
+					<a href="{{url_for('resume')}}">My Resume</a>
+				</div>
+				
+				<div class="col">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+				</div>
+				<div class="col-sm-1">
+					<a href="http://github.com/bmanfred" class="fa fa-github fa-2x circle-icon"></a>	
+				</div>
+				<div class="col-sm-1">
+						<a href="http://linkedin.com/in/brendan-manfred" class="fa fa-linkedin fa-2x circle-icon"></a>
+				</div>
+				<div class="col-sm-1">
+						<a method="post" href="mailto:bmanfred@nd.edu" class="fa fa-envelope fa-2x circle-icon"></a>
+				</div>
+				<div class="col">
+				</div>
+				
 			</div>
 
 		</div>
