@@ -2,10 +2,25 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/master.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+	<div class="navbar">
+
+
+			<div class="dropdown">
+				<button class="dropbtn">Navigation  <i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="{{url_for('index')}}">Home</a>
+					<a href="{{url_for('about_me')}}">About Me</a>
+					<a href="{{url_for('resume')}}">My Resume</a>
+					<a href="http://github.com/bmanfred">GitHub</a>
+					<a href="http://linkedin.com/in/brendan-manfred">LinkedIn</a>
+				</div>
+			</div>
+		</div>
 	<div>
 		<embed id="pdf" src="/../static/images/resume_summer.pdf" width="100%" height="1000">	
 	</div>

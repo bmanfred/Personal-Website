@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/master.css')}}"
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/master.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+	<div class="navbar">
+
+
+			<div class="dropdown">
+				<button class="dropbtn">Navigation  <i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="{{url_for('index')}}">Home</a>
+					<a href="{{url_for('about_me')}}">About Me</a>
+					<a href="{{url_for('resume')}}">My Resume</a>
+					<a href="http://github.com/bmanfred">GitHub</a>
+					<a href="http://linkedin.com/in/brendan-manfred">LinkedIn</a>
+				</div>
+			</div>
+
+		
+		</div>
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -18,7 +35,7 @@
 			<div class="col">
 				<p><br></p>
 				<h3><b>Education</b></h3>
-				<p>I am a rising Junior at the University of Notre Dame, and majoring in computer science with a minor in data science. I am from Lake Bluff, Illinois and attended Lake Forest High School prior to coming to South Bend. Before becoming a computer science major, I was a chemical engineering major for the entiretity of my freshman year.<br><br>Over the course of my spring semester freshman year, I took my first coding course and fell in love with it. I loved how you could start with a blank page, and turn it into whatever you wanted, I loved the creation aspect to it. Over the following summer, I taught myself new languages, and quickly realized that I could see a carreer path starting to take form.</p> 
+				<p>I am a rising Junior at the University of Notre Dame, and majoring in computer science with a minor in data science. I am from Lake Bluff, Illinois and attended Lake Forest High School prior to coming to South Bend. Before becoming a computer science major, I was a chemical engineering major for the entiretity of my freshman year.<br><br>Over the course of my spring semester freshman year, I took my first coding course and fell in love with it. I loved how you could start with a blank page, and turn it into whatever you wanted, I loved the creation aspect to it. Over the following summer, I taught myself new languages, and quickly realized that I could see a career path starting to take form.</p> 
 			</div>	
 			<div class="col">
 				<center><img src="http://assets.nydailynews.com/polopoly_fs/1.2420008.1446426819!/img/httpImage/image.jpg_gen/derivatives/article_750/tutor2n-1-web.jpg" height="500px"></center>
@@ -34,6 +51,10 @@
 		</div>
 
 		<div class="row">
+			<div class="col">
+				<img src="/../static/images/hockey.jpg.JPG" height=300px>
+				<center><img src="/../static/images/team.JPG" height=400px></center>
+			</div>
 			<div class="col">
 				<p><br></p>
 				<h3><b>Interests</b></h3>

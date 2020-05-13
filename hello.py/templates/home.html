@@ -5,13 +5,26 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <html>
+		
 	<body>
+
 		<div class="navbar">
-			<a href="{{url_for('about_me')}}">About Me</a>
-			<a href="{{url_for('resume')}}">My Resume</a>
-			<a href="http://github.com/bmanfred">GitHub</a>
-			<a href="http://linkedin.com/in/brendan-manfred">LinkedIn</a>
+			<div class="dropdown">
+				<button class="dropbtn">Navigation  <i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="{{url_for('index')}}">Home</a>
+					<a href="{{url_for('about_me')}}">About Me</a>
+					<a href="{{url_for('resume')}}">My Resume</a>
+					<a href="http://github.com/bmanfred">GitHub</a>
+					<a href="http://linkedin.com/in/brendan-manfred">LinkedIn</a>
+				</div>
+			</div>
 		</div>
+
+
+
+			
+		
 		
 		<div class="container">
 			<div class="row" id="header">
@@ -26,7 +39,7 @@
 					<img id="me" src="https://media-exp1.licdn.com/dms/image/C4D03AQGJAVH-Wxm7qw/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=UCk5lTW7erWkqSph2Vnh_UePiwIr68-nFlGRJzQgAOA">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" id="icons">
 				<div class="col">
 				</div>
 				<div class="col-sm-1">
