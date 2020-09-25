@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 from flask import Flask, render_template
+import ssl
 
 app = Flask(__name__)
 
@@ -19,4 +20,8 @@ def resume():
 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port=80)
+    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+    context.verify_mode = ssl.CERT_REQUIRED
+    context.load_verify_locations('ca-crt.pem')
+    context.load_cert_chain('server.crt', 'server.key')
+    app.run(host = '0.0.0.0', port=8080, ssl_context=context)
